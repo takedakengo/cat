@@ -1,0 +1,256 @@
+@charset"utf-8";
+/* ヘッダー */
+header{
+    background-image: url(../img/p4g.png);
+    background-size: cover;
+    padding: 0  0 20px 0;
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.header-rogo{
+    padding: 10px 0 0 10px;
+    width:  10px; 
+    height: 10px;
+}
+.menu-btn{
+    border-radius: 10px;
+	width: 50px;
+	height: 50px;
+    background-image: url(../img/hum.png);
+    background-size: contain;
+    padding: 10px 10px 0 0;
+}
+@media screen and (min-width: 900px) {
+    header{
+        padding-bottom: 2.5em;
+    }
+    .header-rogo{
+        padding: -10px 0 0 0px;
+    }
+	.menu-btn {
+		display: none;
+	}
+}
+/* ナビゲーションメニュー */
+nav{
+    background-color: rgba(73, 73, 73, 0.939);
+    position: fixed;
+    width: 100vw;
+}
+
+.navbar{
+    display: none;
+    margin: 0;
+}
+.navbar a{
+    text-align: left;
+    border-bottom: 0.5px solid #a3a2a2;
+    padding: 5px 7px;
+    display: block;
+    font-size: 18PX;
+    Text-decoration: none;
+    color: white;
+}
+/*固定用css*/
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+@media screen and (min-width:900px) {
+    nav{
+        
+    }
+	.navbar {
+       padding: 7px;
+		display: flex !important;
+        background-color: rgba(255, 255, 255, 0);
+	}
+	.navbar li {
+		flex: 1 1 auto;
+		text-align: center;
+	}
+    .navbar a{
+        color: #ffffff;
+       border-bottom: none;
+    }
+
+}
+/* メイン部分 */
+.main-box,.sub-box,.osirasebox{
+    display: flex;
+    flex-flow: column;
+}
+.text,.text1 {
+    box-shadow: 3px 3px 6px 3px #a3a2a2,3px 3px 8px rgba(255,255,255,0.8) inset;
+    padding: 1em 1em;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-left: solid 8px #1e8800da;
+    border-right: solid 8px #1e8800da;
+     line-height: 23px;
+}
+.text,.text1 p{
+    font-size: 23px;
+    font-weight: bold;
+}
+.text1{
+    border-left: solid 8px #f33333d5;
+    border-right: solid 8px #f33333d5;
+}
+.img-responsive {
+    padding: 2px 10px 0 0;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.news{
+    display: block;
+    max-width: 340%;
+    height: auto;
+}
+.news h2{ 
+    color: #ae000c;
+    margin:3px;
+    font-size: 35px;
+    border-bottom: 2.5px solid #e66e66;
+    border-radius: 5px;
+  }
+.news li{
+    margin-top: 3px;
+    border-bottom: 0.5px solid #f09892;
+    display: block;
+    font-size: 17px;
+}
+.date{
+    padding: 8px 0px 10px 0;
+    color: #ae000c;
+    text-align: left;
+    font-size: 17px;
+    margin-right: 15em;
+}
+.naiyou{
+ margin-top: -28px;  
+ margin-bottom: 10px;
+ text-align: left;
+ font-size: 20px;
+ font-weight: normal;
+}
+.toukou{
+    background-color: whitesmoke;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.toukou p{
+    padding: 10px 0 30px 0;
+    font-size: 18px;
+    /* font-weight: bold; */
+    /* letter-spacing: 0.25px; */
+
+}
+@media (min-width: 950px) {
+    main {
+        flex: 1 1 auto;
+    }
+    .img-responsive{
+        padding-left: 8em;
+    }
+    .main-box,.sub-box {
+        flex-flow: row;
+        justify-content: space-around;
+    }
+    .text1,.text {
+        flex: 0 0 400px;
+        margin:0 0 1em 0;
+    }
+    
+}
+@media (min-width: 750px){
+    .osirasebox{
+        flex-flow: row;
+        justify-content: space-around;
+    }
+}
+/* ==========info.html========= */
+
+.question,.time{
+    text-align: left;
+    margin:1.5em 0 3em 1em;
+    padding: 1.5em 0 1.5em 0;
+}
+
+.koumoku{
+    font-size: 20.5px;
+}
+.youbi,.koumoku1{
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    display: inline;
+}
+.youbi{
+    font-size:27px;
+    color: #ae000c;
+}
+input,textarea{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* 権利 */
+.rights{
+    padding-top: 1em;
+}
+.rights p{
+    text-align: center;
+    font-size: 18px;
+}
+/* フッター */
+footer{
+  background-color: #393838;
+}
+.navbar1{
+    margin: 0;
+}
+.navbar1 li{
+    display: flex;
+}
+.navbar1 a{
+    padding: 6px 0;
+    display: block;
+    font-size: 18PX;
+    Text-decoration: none;
+    color: #b7b7b7;
+}
+.container, .container1{   
+    border-bottom: 1px solid #b7b7b71e;
+}
+.container a{
+    color: white;
+}
+.container1{
+    padding: 20px 5px px 0;
+    display: flex;
+    justify-content: end; 
+}
+.container1 img{
+    margin: 8px 10px 6px 0;
+    }
+.container{
+     margin: 4px  0 4px 0px;
+}
+@media screen and (min-width: 750px) {
+    .container{
+        border: none;
+        display: inline-block;
+        flex-flow: column;
+    }
+    .container a{
+        color: white;
+        border: none;
+        margin: 8px 18px;
+      padding: 15px 18px 15px;
+      border: 1px solid #706f6f;
+      border-radius: 4px;
+    }
+}

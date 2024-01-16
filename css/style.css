@@ -1,0 +1,81 @@
+@charset"utf-8";
+                    /* 共通のcss */
+body{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif ;
+    background-color: rgba(247, 247, 126, 0.664);
+    /* background-image: url(../img/neko.png); */
+    /* background-size: cover; */
+    margin: 0;
+    }
+ul{
+    margin-top: 7px;
+}
+li{
+    display: inline;
+}
+h3{
+    font-size: 27px;
+    color: #f73b76;
+    margin: 15px 0 17px 0;
+}
+h4{
+    margin: 1em 0 0 0;
+    text-align: left;
+    font-size: 25px;
+    color: rgb(255, 115, 0);  
+    border-left: 10px solid orange;
+}
+h5{
+    font-size: 25px;
+    margin: 9px;
+    font-weight: normal;
+}
+p{
+    font-size: 22px;
+ }
+ iframe{
+    padding-top: 10px;
+
+    width: 100%;
+ }
+a{
+    color: #fff;
+    text-decoration: none;
+}  
+a:visited{
+    color: white;
+}
+a:hover{
+    cursor:pointer;
+    background-color: #e6e6e63f;
+}
+.iconkari{
+    padding-top: 20px ;
+}
+.instagram-media{
+    max-height: 490px;
+    overflow-y: auto;   
+}
+.mojibox,.mojibox1{
+    margin: 0 0 20px 0;
+    background-color: #fcfcfc;
+    border-bottom:2.5px  solid orange;
+}
+.mojibox3{
+    margin: 8px 0 20px 0;
+    background-color: #fcfcfc;
+    border-bottom:2.5px  solid orange;
+}
+.nikki{
+    max-height: 410px;
+    overflow-y: auto;   
+}
+.wrap{
+    background-image: url(../img/back.png);
+    background-size: cover;
+}
+@media screen and (min-width:900px) {
+.mojibox3{
+    margin: 7vw 0 20px 0;}
+}
