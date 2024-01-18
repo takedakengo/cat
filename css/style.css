@@ -8,6 +8,12 @@ body{
     /* background-size: cover; */
     margin: 0;
     }
+
+.imges{
+    width: 100vw;
+    height: auto;
+
+}
 ul{
     margin-top: 7px;
 }
